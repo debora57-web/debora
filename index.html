@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Beleza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Beleza & Cia</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="content">
+            <h2>Transforme sua Beleza!</h2>
+            <p>Venha conhecer nossos serviços exclusivos de cabelo, maquiagem e estética.</p>
+            <button id="agendarBtn">Agende seu horário</button>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="./img/cabelo.jpg" alt="Corte de Cabelo">
+                <h3>Corte de Cabelo</h3>
+                <p>Renove o seu visual com os melhores cortes do momento.</p>
+            </div>
+            <div class="service-card">
+                <img src="./img/manicure-e-pedicure.jpg" alt="Manicure">
+                <h3>Manicure e Pedicure</h3>
+                <p>Unhas bem cuidadas e lindas para você.</p>
+            </div>
+            <div class="service-card">
+                <img src="./img/maquiagens.webp" alt="Maquiagem">
+                <h3>Maquiagem</h3>
+                <p>Deixe sua pele radiante para qualquer ocasião.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cadastro de Agendamento -->
+    <section class="cadastro">
+        <h2>Agende seu horário</h2>
+        <form id="formCadastro">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <button type="submit">Confirmar Agendamento</button>
+        </form>
+        <div id="resultado" class="resultado"></div>
+    </section>
+
+    <!-- Botões de Contato (WhatsApp e Instagram) -->
+    <div class="contact-buttons">
+        <div class="whatsapp">
+            <a href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Whatsapp_icon.png" alt="WhatsApp">
+            </a>
+        </div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/deboraellengal123/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Beleza & Cia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
